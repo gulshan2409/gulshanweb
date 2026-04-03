@@ -1,0 +1,11 @@
+<?php
+
+$files = scandir("uploads-GULSHAN/");
+
+foreach($files as $file){
+    if($file != "." && $file != ".."){
+        echo "<img src='uploads-GULSHAN/$file' width='150'><br>";
+    }
+}
+
+?>
